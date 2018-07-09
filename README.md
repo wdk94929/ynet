@@ -14,5 +14,14 @@
    npm install
    cnpm install
  #vue全家桶+axios+elementUI
-  #cnpm install vue-router vuex --save
+  #路由 状态管理器
+   cnpm install vue-router vuex --save
+   src下面的main.js下面引用vue-router，vuex
+  #vue-resouce由于官方不再维护，现在推荐使用axios,由于axios支持JSONP,所以我们需要安装中间件http-proxy-middleware来解决跨域的问题
+   npm install axios --save-dev
+   cnpm install axios --save-dev
+   npm install axios --save-dev http-proxy-middleware
+   cnpm install axios --save-dev http-proxy-middleware
+   src下面的main.js下面引用axios,axios不支持Vue.use(axios),所以 Vue.prototype.$axios = axios
+
 
